@@ -5,7 +5,14 @@ module.exports = {
     author: `@ipeinadom`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      }
+    },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,11 +25,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `raising the floor`,
+        short_name: `rtf`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fff`,
+        theme_color: `#f7c022`,
         display: `minimal-ui`,
         icon: `src/images/rtf-icon.png`, // This path is relative to the root of the site.
       },
