@@ -9,6 +9,8 @@ import BackgroundImage from 'gatsby-background-image'
 
 import styled from 'styled-components'
 
+import StatsSection from '../components/homepage/stats-container'
+
 // Styles
 const HeroContent = styled.div`
   width: 100%;
@@ -61,11 +63,11 @@ const HeroParagraph = styled.p`
   }
 `
 
-const StatsContainer = styled.div`
-  @media (min-width: 768px) {
-    margin-left: 33%;
-  }
-`
+// const StatsContainer = styled.div`
+//   @media (min-width: 768px) {
+//     margin-left: 33%;
+//   }
+// `
 
 const GPIIContainer = styled.div`
   background-color: #004065;
@@ -120,17 +122,15 @@ const StyledHeroSection = styled(HeroSection)`
   }
 `
 
+
+
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     
     <StyledHeroSection className="hero"/>
 
-    <StatsContainer>
-      <h2>Over 1 billion people</h2>
-      <p>around the world experience some form of disability, and a greater number experience literacy or socioeconomic problems that put them in the wrong side of the digital divide. Many of these people cannot access all the resources and benefits their peers can because they require a special interface accommodation of some type.</p>
-      <Link to="/" className="something">Learn More</Link>
-    </StatsContainer>
+    <StatsSection />
     
     <GPIIContainer>
       <h2>A World that Adapts to your needs</h2>
