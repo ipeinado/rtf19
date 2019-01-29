@@ -10,6 +10,9 @@ import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
 
 import StatsSection from '../components/homepage/stats-container'
+import GPIISection from '../components/homepage/gpii-section'
+
+import morphicLogo from "../images/animated-morphic-logo.svg"
 
 // Styles
 const HeroContent = styled.div`
@@ -63,19 +66,14 @@ const HeroParagraph = styled.p`
   }
 `
 
-// const StatsContainer = styled.div`
-//   @media (min-width: 768px) {
-//     margin-left: 33%;
-//   }
-// `
-
-const GPIIContainer = styled.div`
-  background-color: #004065;
-  color: #fff;
-`
-
 const MorphicContainer = styled.div`
   text-align: center;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+
+  @media (min-width: 992px) {
+    width: 750px;
+  }
 `
 
 const HeroSection = ({ className }) => (
@@ -132,15 +130,17 @@ const IndexPage = (props) => (
 
     <StatsSection />
     
-    <GPIIContainer>
-      <h2>A World that Adapts to your needs</h2>
-      <p>Our main goal is to build the Global Public Inclusive Infrastructure (GPII). The GPII will combine cloud computing, web, and platform services to make access simpler, more inclusive, available everywhere, and more affordable.</p>
-      <Link to="/" className="something">Learn More</Link>
-    </GPIIContainer>
+    <GPIISection />
 
     <MorphicContainer>
-      <h2>A Star is Born</h2>
-      <p>Meet MORPHIC, the latest implementation of the GPII for auto personalization of Personal Computers that is being tested in several locations on the United States. </p>
+      <h2 style={{ fontSize: `40px`, }}>A Star is Born</h2>
+      <img 
+        src={morphicLogo}
+        style={{
+          width: `140px`,
+        }}
+      />
+      <p style={{ fontSize: `20px`, lineHeight: `32px`, }}>Meet MORPHIC, the latest implementation of the GPII for auto personalization of Personal Computers that is being tested in several locations on the United States. </p>
     </MorphicContainer>
 
     <Link to="/page-2/">Go to page 2</Link>

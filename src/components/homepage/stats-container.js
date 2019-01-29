@@ -3,9 +3,9 @@ import { graphql, StaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
 import styled from 'styled-components'
 
-const StatsContainer = styled.div`
+const StatsContainer = styled.section`
 	padding: 0 1rem;
-	margin: 1rem auto;
+	margin: 4rem auto;
 	position: relative;
 
 	& > .kids-image {
@@ -37,7 +37,7 @@ const StatsContent = styled.div`
 	@media (min-width: 768px) {
 		position: absolute;
 		top: 20%;
-		margin-left: 340px;
+		margin-left: 360px;
 	}
 
 	@media (min-width: 1200px) {
@@ -46,12 +46,13 @@ const StatsContent = styled.div`
 `
 
 const StatsTitle = styled.h2`
-	font-size: 48px;
+	font-size: 40px;
 	margin-bottom: 12px;
 `
 
 const StatsText = styled.p`
 	font-size: 20px;
+	line-height: 32px;
 `
 
 const StatsSection = ({ data }) => (
