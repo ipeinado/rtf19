@@ -136,7 +136,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      width: window.innerWidth,
+      width: 1024,
       expanded: false,
     }
     this.handleToggle = this.handleToggle.bind(this)
@@ -144,6 +144,9 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
+    this.setState({
+      width: window.innerWidth
+    })
     window.addEventListener('resize', this.handleWindowSizeChange)
   }
 
