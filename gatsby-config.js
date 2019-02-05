@@ -3,6 +3,24 @@ module.exports = {
     title: `Raising the Floor`,
     description: `Raising the Floor is an organization that is working to ensure that people who face barriers due to disability, literacy, digital-literacy, and aging are able to fully understand, access, and use the digital world.`,
     author: `@ipeinadom`,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/',
+      },
+      {
+        name: 'Who we are',
+        link: '/who-we-are',
+      },
+      {
+        name: 'What we do',
+        link: '/what-we-do',
+      },
+      {
+        name: 'Get Involved',
+        link: '/get-involved',
+      },
+    ],
   },
   plugins: [
     {
