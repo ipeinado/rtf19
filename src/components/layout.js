@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 import Header from './header'
 import SubscribeForm from './subscribeform'
@@ -52,14 +52,40 @@ const Layout = ({ children }) => (
           <Footer>
             <Container>
               <div className="logo-footer">
-              <p>Raising The Floor</p>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
+                <Link 
+                  to="/"
+                  style={{
+                    color: `#fff`,
+                    textDecoration: `none`,
+                    display: `block`,
+                    fontSize: 32,
+                    fontWeight: `bold`,
+                  }}
+                >
+                  Raising The Floor
+                </Link>
+                © {new Date().getFullYear()}, Built with
+                {` `}
+                <a 
+                  href="https://www.gatsbyjs.org"
+                  style={{
+                    textDecoration: `none`,
+                    color: `#F5BE38`,
+                  }}
+                >
+                  Gatsby
+                </a>
               </div>
 
               <div className="submit-form">
-                <p>Sign up to receive updates from Raising The Floor</p>
+                <p
+                  style={{
+                    textTransform: `uppercase`,
+                    marginBottom: `1rem`,
+                  }}
+                >
+                  Sign up to receive updates from Raising The Floor
+                </p>
                 <SubscribeForm />
               </div>
             </Container>
