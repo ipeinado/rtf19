@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import FluidContainer from '../components/fluidcontainer'
 
 import BackgroundImage from 'gatsby-background-image'
 import Image from 'gatsby-image'
@@ -15,23 +16,6 @@ const StyledBackgroundSection = styled(BackgroundImage)`
   width: 100%;
   padding: 6rem 0;
   background-repeat: no-repeat;
-`
-
-const FluidContainer = styled.div`
-  padding: 0 1rem;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    width: 750px;
-  }
-  
-  @media (min-width: 992px) {
-    width: 950px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 1170px;
-  }
 `
 
 const IndexPage = (props) => (
@@ -80,8 +64,6 @@ const IndexPage = (props) => (
         <img src={ morphicLogo } alt="" />
       </FluidContainer>
     </section>
-
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

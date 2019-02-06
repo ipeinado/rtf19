@@ -4,7 +4,6 @@ const typography = new Typography({
 	baseFontSize: "18px",
 	baseLineHeight: 1.5,
 	headerFontFamily: [
-		"Open Sans",
     "Open Sans",
     "sans-serif",
 	],

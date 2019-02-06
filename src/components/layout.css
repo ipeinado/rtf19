@@ -629,3 +629,11 @@ pre tt:after {
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+footer > .container {
+  background-color: olive;
+}
+
+footer > div > div {
+  width: 50%;
+}

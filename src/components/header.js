@@ -208,9 +208,9 @@ class Header extends React.Component {
                 <h2 className="sr-only" id="main-menu-title">Main navigation</h2>
                 <Menu className={ this.state.expanded ? 'navigation-menu expanded' : 'navigation-menu' }>
                   <MenuItem><Link to="/" activeClassName="active" title="Go to Raising The Floor homepage">Home</Link></MenuItem>
-                  <MenuItem><Link to="/page-2" activeClassName="active" title="Learn who we are">Who we are</Link></MenuItem>
-                  <MenuItem><Link to="/page-2" activeClassName="active" title="Discover our projects">What we do</Link></MenuItem>
-                  <MenuItem className="btn"><Link to="/page-2" activeClassName="active" title="Participate">Get involved</Link></MenuItem>
+                  <MenuItem><Link to="/who-we-are" activeClassName="active" title="Learn who we are">Who we are</Link></MenuItem>
+                  <MenuItem><Link to="/what-we-do" activeClassName="active" title="Discover our projects">What we do</Link></MenuItem>
+                  <MenuItem className="btn"><Link to="/get-involved" activeClassName="active" title="Participate">Get involved</Link></MenuItem>
                 </Menu>
               </Nav>
             </div>
