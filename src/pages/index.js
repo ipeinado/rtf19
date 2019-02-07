@@ -14,7 +14,7 @@ import morphicLogo from "../images/animated-morphic-logo.svg"
 
 const StyledBackgroundSection = styled(BackgroundImage)`
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-repeat: no-repeat;
 `
 
@@ -22,6 +22,7 @@ const PageTitle = styled.h1`
   font-size: 4rem;
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
 `
 
 const SectionContainer = styled.div`
@@ -41,6 +42,7 @@ const SectionContainer = styled.div`
 `
 
 const SectionContent = styled.div`
+  font-family: 'Open Sans', sans-serif;
   @media (min-width: 992px) {
     width: 80%;
   }
@@ -82,7 +84,8 @@ const LearnMoreButton = styled(Link)`
   text-decoration: none;
   color: #000;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
 
   &:hover {
     background-color: #FFDC76;
@@ -109,14 +112,14 @@ const IndexPage = (props) => (
       backgroundColor={`#eeeeef`}
       style={{ padding: `4rem 0`, }}
     >
-      <SectionContainer>
+      <FluidContainer>
         <SectionContent>
           <PageTitle>
             Breaking Down the Barriers
           </PageTitle>
           <p style={{ fontSize: 24, color: `#fff`, }}>We work to make sure that everyone can use the technologies they encounter.</p>
       </SectionContent>
-      </SectionContainer>
+      </FluidContainer>
     </StyledBackgroundSection>
 
     <section id="stats-section">

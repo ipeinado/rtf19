@@ -4,26 +4,30 @@ import styled from 'styled-components'
 
 const Container = styled.div`
 	padding: 0 1rem;
-	margin: 0 auto;
+	margin: 3rem auto;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
 
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
 	@media (min-width: 992px) {
 		padding-left: 0;
 		padding-right: 0;
-		width: 950px;
+		width: 60%;
 	}
 
 	@media (min-width: 1200px) {
-		width: 1170px;
+		width: 50%;
 	}
 `
 
-const FluidContainer = ({ children }) => (
+const PageContainer = ({ children }) => (
 	<Container>
 		{children}
 	</Container>
 )
 
-export default FluidContainer
+export default PageContainer

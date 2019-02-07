@@ -619,6 +619,11 @@ pre tt:after {
   }
 }
 
+.page-content {
+  margin-top: 90px;
+  overflow: hidden;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -635,5 +640,9 @@ footer > .container {
 }
 
 footer > div > div {
-  width: 50%;
+  width: 100%;
+  margin-bottom: 2rem;
+  @media (min-width: 992px) {
+    width: 50%;
+  }
 }

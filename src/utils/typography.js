@@ -1,16 +1,17 @@
 import Typography from "typography"
 
 const typography = new Typography({
-	baseFontSize: "18px",
-	baseLineHeight: 1.5,
+	baseFontSize: "20px",
+	baseLineHeight: 1.8,
 	headerFontFamily: [
     "Open Sans",
     "sans-serif",
 	],
   bodyFontFamily: [
-    "Lato",
-    "Open Sans",
-    "sans-serif",
+    "Georgia",
+    "Cambria",
+    "Times New Roman",
+    "serif",
   ],
   headerColor: '#000',
   bodyColor: '#000',

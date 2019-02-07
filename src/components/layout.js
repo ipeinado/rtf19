@@ -47,7 +47,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
+        <div className="page-content">
           {children}
           <Footer>
             <Container>
@@ -58,23 +58,27 @@ const Layout = ({ children }) => (
                     color: `#fff`,
                     textDecoration: `none`,
                     display: `block`,
-                    fontSize: 32,
+                    fontSize: 28,
                     fontWeight: `bold`,
+                    fontFamily: `"Open Sans", sans-serif`,
+                    letterSpacing: `-1px`,
                   }}
                 >
                   Raising The Floor
                 </Link>
-                © {new Date().getFullYear()}, Built with
-                {` `}
-                <a 
-                  href="https://www.gatsbyjs.org"
-                  style={{
-                    textDecoration: `none`,
-                    color: `#F5BE38`,
-                  }}
-                >
-                  Gatsby
-                </a>
+                <p style={{ fontSize: `.85rem`, }}>
+                  © {new Date().getFullYear()}, Built with
+                  {` `}
+                  <a 
+                    href="https://www.gatsbyjs.org"
+                    style={{
+                      textDecoration: `none`,
+                      color: `#F5BE38`,
+                    }}
+                  >
+                    Gatsby
+                  </a>
+                </p>
               </div>
 
               <div className="submit-form">
@@ -82,6 +86,8 @@ const Layout = ({ children }) => (
                   style={{
                     textTransform: `uppercase`,
                     marginBottom: `1rem`,
+                    fontFamily: `"Open Sans", sans-serif`,
+                    fontSize: `.85rem`,
                   }}
                 >
                   Sign up to receive updates from Raising The Floor

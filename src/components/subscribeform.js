@@ -6,7 +6,8 @@ const SubmitButton = styled.button`
   background-color: #F5BE38;
   border: 0;
   font-weight: bold;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-family: 'Open Sans', sans-serif;
 `
 
 class SubscribeForm extends React.Component {
@@ -59,7 +60,7 @@ class SubscribeForm extends React.Component {
           display: `flex`,
         }}
       >
-  				<label for="email" className="sr-only" id="email-label">Enter your email address:</label>
+  				<label htmlFor="email" className="sr-only" id="email-label">Enter your email address:</label>
           <input
             type="email"
             name="email"

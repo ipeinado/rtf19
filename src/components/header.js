@@ -10,7 +10,12 @@ const HeaderContainer = styled.header`
   background: #fff;
   width: 100%;
   overflow: hidden;
-  padding: 1.45rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid #d9d9d9;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, .97);
+  z-index: 9999;
 `
 const NavBar = styled.div`
   margin: 0 auto;
@@ -21,6 +26,8 @@ const NavBar = styled.div`
   
   @media (min-width: 992px) {
     width: 950px;
+    padding-left: 0;
+    padding-right: 0; 
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -36,14 +43,15 @@ const NavbarHeader = styled.div`
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: -1px;
 `
 
 const NavTitle = styled(Link)`
   color: #000;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 800;
   text-decoration: none;
-  letter-spacing: -2px;
 `
 
 const ToggleButton = styled.button`
@@ -101,20 +109,25 @@ const MenuItem = styled.li`
 
   &.btn {
     background-color: #F5BE38;
+
+    &:hover {
+      background-color: #FFDC76;
+    }
   }
 
   a {
     display: block;
-    font-size: 0.95rem;
+    font-size: .85rem;
     color: #333;
     padding-left: 12px;
     padding-right: 12px;
-    font-weight: bold;
+    font-weight: 600;
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 20px;
     text-decoration: none;
     border-bottom: 1px solid #eee;
+    font-family: 'Open Sans', sans-serif;
     
   }
 
@@ -122,7 +135,7 @@ const MenuItem = styled.li`
     display: inline-block;
 
     a {
-      border-bottom: 5px solid #fff;  
+      border-bottom: 5px solid transparent;  
     }
     a:hover,
     a:focus,
